@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        img{
+            width:300px;height:300px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <img src="./ice3.jpeg">
+
+    <script>
+
+  var imgg = document.getElementsByTagName("img");
+ 
+ ss= window.localStorage.getItem("image");
+  imgg[0].setAttribute("src",ss);
+ var dv2 = document.createElement("div");
+ dv2.setAttribute("style","margin-top:100px;")
+ document.body.appendChild(dv2);
+  var imgg1 = document.createElement("img");
+  dv2.appendChild(imgg1)
+  imgg1.setAttribute("src","./ice1.jpeg")
+  imgg1.style.width="200px"
+  imgg1.style.height="200px"
+  
+
+   imgg1.addEventListener("click",()=>{
+    imgg[0].setAttribute("src","./ice1.jpeg")
+   })
+
+   
+  var imgg2 = document.createElement("img");
+  dv2.appendChild(imgg2)
+  imgg2.setAttribute("src","./ice2.jpeg")
+   imgg2.style.width="200px"
+   imgg2.style.height="200px"
+  
+   imgg2.addEventListener("click",()=>{
+    imgg[0].setAttribute("src","./ice2.jpeg")
+   })
+
+   var imgg3 = document.createElement("img");
+  dv2.appendChild(imgg3)
+  imgg3.setAttribute("src","./ice3.jpeg")
+   imgg3.style.width="200px"
+   imgg3.style.height="200px"
+   imgg3.addEventListener("click",()=>{
+    imgg[0].setAttribute("src","./ice3.jpeg")
+   })
+  </script>
+</body>
+</html>
